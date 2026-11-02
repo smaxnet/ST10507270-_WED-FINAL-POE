@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kota Bite | Order</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a class="logo" href="index.html">Kota<span>Bite</span></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a class="active" href="order.html">Order</a>
+        <a href="review.html">Reviews</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="center">
+      <span class="kicker">Your Meal, Your Choice</span>
+      <h2>Order Your Favourite Kota</h2>
+      <p>Choose from our kota favourites, sides and drinks — then checkout in a few steps.</p>
+    </div>
+
+    <div class="order-layout">
+      <div class="panel">
+        <div class="menu-grid" id="menuGrid"></div>
+
+        <form id="orderForm" class="order-form" novalidate>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="customerName">Name</label>
+              <input id="customerName" name="customerName" type="text" autocomplete="given-name" required />
+            </div>
+
+            <div class="form-field">
+              <label for="customerSurname">Surname</label>
+              <input id="customerSurname" name="customerSurname" type="text" autocomplete="family-name" required />
+            </div>
+
+            <div class="form-field">
+              <label for="customerPhone">Contact Number</label>
+              <input id="customerPhone" name="customerPhone" type="tel" autocomplete="tel" required />
+            </div>
+
+            <div class="form-field">
+              <label for="customerEmail">Email</label>
+              <input id="customerEmail" name="customerEmail" type="email" autocomplete="email" required />
+            </div>
+
+            <div class="form-field">
+              <label for="orderType">Order Type</label>
+              <select id="orderType" name="orderType" required>
+                <option value="takeaway">Takeaway</option>
+                <option value="order-in">Order In</option>
+                <option value="delivery">Delivery</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="paymentMethod">Payment Method</label>
+              <select id="paymentMethod" name="paymentMethod" required>
+                <option value="Cash">Cash</option>
+                <option value="MasterCard">MasterCard</option>
+                <option value="Visa">Visa</option>
+                <option value="American Express">American Express</option>
+                <option value="EFT">EFT</option>
+              </select>
+            </div>
+
+            <div class="full-width form-field">
+              <label for="deliveryAddress">Delivery Address (if delivery selected)</label>
+              <input id="deliveryAddress" name="deliveryAddress" type="text" placeholder="e.g. 12 Main Road, Durban" />
+            </div>
+
+            <div class="full-width form-field">
+              <label for="orderNotes">Special Instructions</label>
+              <textarea id="orderNotes" name="orderNotes" placeholder="Extra sauce, no onions, extra chips..."></textarea>
+            </div>
+
+            <div class="full-width form-field">
+              <label for="orderMade">Order Made</label>
+              <textarea id="orderMade" name="orderMade" rows="3" placeholder="Add items to your cart to see your order here." readonly></textarea>
+            </div>
+
+            <div class="form-field">
+              <label for="orderBalance">Order Balance</label>
+              <input id="orderBalance" name="orderBalance" type="text" value="R0.00" readonly />
+            </div>
+          </div>
+
+          <div id="statusBox" class="status-box" aria-live="polite"></div>
+          <div id="thankYouMessage" class="thank-you">Thank you! Your order has been placed successfully.</div>
+
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:20px;">
+            <button type="submit" class="btn">Place Order</button>
+            <button type="button" class="btn alt" id="clearCartBtn">Clear Cart</button>
+          </div>
+        </form>
+      </div>
+
+      <aside class="panel cart-panel">
+        <h3>Your Cart</h3>
+        <div id="cartItems"></div>
+
+        <div class="totals">
+          <div class="totals-row"><span>Subtotal</span> <strong id="subtotalValue">R0.00</strong></div>
+          <div class="totals-row"><span>VAT (15%)</span> <strong id="vatValue">R0.00</strong></div>
+          <div class="totals-row"><span>Delivery Fee</span> <strong id="deliveryValue">R0.00</strong></div>
+          <div class="totals-row total"><span>Total</span> <strong id="totalValue">R0.00</strong></div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="card" style="max-width:1000px;margin:40px auto 0;padding:24px;border-radius:20px;">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank" rel="noopener" class="btn alt">Facebook</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="btn alt">Instagram</a>
+        <a href="https://wa.me/27612345678" target="_blank" rel="noopener" class="btn alt">WhatsApp</a>
+        <a href="https://x.com" target="_blank" rel="noopener" class="btn alt">Twitter / X</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy;2026 Kota BITE .All Rights Reserved.|Durban,KwaZuLu-Natal,South Africa </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

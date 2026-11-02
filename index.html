@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kota Bite | Home</title><link rel="stylesheet" href="styles.css">
+<link rel="stylesheet"href="style.css">
+</head>
+<body>
+<header><div class="navbar">
+    <a class="logo" href="index.html">Kota<span>Bite</span></a>
+<nav class="nav"><a class="nav-link active" href="index.html">Home</a>
+    <a class="nav-link" href="menu.html">Menu</a>
+  <a class="nav-link" href="#enquiry">Enquiry</a>
+    <a class="nav-link"href="order.html">Order</a>
+    <a class="nav-link"href="review.html">Reviews</a>
+    <a class="nav-link"href="about-us.html">About Us</a>
+    <a class="nav-link"href="contact.html">Contact</a>
+    <a class="nav-link"href="social.html">Socials</a>
+</nav>
+</div>
+</header>
+
+<section class="hero"><div class="hero-inner"><div class="kicker">Kota Franchise • South Africa</div>
+<h1>Big Flavour.<br>Beautifully Served.</h1>
+
+<img src="C:\Users\Student\Desktop\web development\html Website\Kota_Bite\KOTASLOGAN.jpeg" alt=450px>
+
+
+<p>Welcome to <strong>Kota Bite</strong> — where the proudly South African kota gets a fresh, classy and delicious twist. Generous portions, bold flavours and a warm experience in every bite.</p>
+<a class="btn" href="menu.html">Explore Our Menu</a><a class="btn alt" href="order.html">Order Now</a></div></section>
+<section class="section"><div class="center"><span class="tag">OUR PROMISE</span><h2>Street Food, Elevated.</h2><p>We combine the comfort of a classic kota with clean presentation, consistent quality and friendly service.</p></div>
+<div class="grid" style="margin-top:28px">
+
+<img src="C:\Users\Student\Desktop\web development\html Website\Kota_Bite\kotaWALLPAPER.jpeg"alt=500px>
+
+
+<!--------whats being sold-------->
+
+<div class="card center"><div class="Fresh kotas"></div><h3>Fresh Kotas</h3><p>Loaded with satisfying fillings and signature sauces.</p></div>
+<div class="card center"><div class="Crispy sides"></div><h3>Crispy Sides</h3><p>Golden chips and extras made to complete your meal.</p></div>
+<div class="card center"><div class="Cool Drinks"></div><h3>Cool Drinks</h3><p>Refreshing beverages to pair with every kota.</p></div>
+
+
+</div></section>
+<section class="section"><div class="banner>
+    <span class="kicker" style="color:whitesmoke">KOTA BITE SLOGAN</span>
+    <h2>“Taste the Tradition. Love Every Bite.”</h2>
+    <p>Available for order-in and takeaway.</p>
+    <a class="btn" style="background:#fff;color:#6f3d22" href="order.html">Start Your Order</a></div></section>
+
+<section class="section">
+  <div class="center">
+    <span class="kicker">Fresh • Fast • Full of Flavour</span>
+    <h2>Welcome to Kota Bite</h2>
+    <p>South African street food made fresh, hot and ready to enjoy.</p>
+  </div>
+</section>
+
+<div class="card social-panel" style="max-width:1000px;margin:30px auto;padding:24px;border-radius:20px;">
+  <h3>Follow Us</h3>
+  <div class="social-links" style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;">
+    <a href="https://facebook.com" target="_blank" rel="noopener" class="btn alt">Facebook</a>
+    <a href="https://instagram.com" target="_blank" rel="noopener" class="btn alt">Instagram</a>
+    <a href="https://wa.me/27612345678" target="_blank" rel="noopener" class="btn alt">WhatsApp</a>
+    <a href="https://x.com" target="_blank" rel="noopener" class="btn alt">Twitter / X</a>
+  </div>
+</div>
+
+<section class="section" id="enquiry">
+  <div class="center">
+    <span class="kicker">We're Here to Help</span>
+    <h2>Product &amp; Services Enquiry</h2>
+    <p>Ask us about our menu, prices, availability, or sponsorship opportunities.</p>
+  </div>
+  <div class="card" style="max-width:760px;margin:28px auto;padding:24px;">
+    <form id="enquiryForm" onsubmit="event.preventDefault(); document.getElementById('enquiryResponse').textContent='Thank you for your enquiry. We will be in touch soon.'; this.reset();">
+      <label for="enquiryName">Full Name</label>
+      <input type="text" id="enquiryName" name="name" autocomplete="name" required>
+
+      <label for="enquiryEmail">Email Address</label>
+      <input type="email" id="enquiryEmail" name="email" autocomplete="email" required>
+
+      <label for="enquiryContact">Contact Number</label>
+      <input type="tel" id="enquiryContact" name="contact" autocomplete="tel" required>
+
+      <label for="enquiryType">Enquiry Subject</label>
+      <select id="enquiryType" name="enquiryType" required>
+        <option value="product">Product Cost &amp; Availability</option>
+        <option value="sponsor">Sponsorship Opportunity</option>
+        <option value="volunteer">Volunteer Program</option>
+      </select>
+
+      <label for="enquiryMessage">Details</label>
+      <textarea id="enquiryMessage" name="message" rows="4" required></textarea>
+
+      <button class="btn" type="submit">Submit Enquiry</button>
+      <p id="enquiryResponse" class="small" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!---FOOTER-->
+<footer>
+    <p>&copy;2026 Kota BITE .All Rights Reserved.|Durban,KwaZuLu-Natal,South Africa </p>
+</footer>
+</body></html>

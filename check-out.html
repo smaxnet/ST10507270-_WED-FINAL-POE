@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kota Bite | Check-Out</title><link rel="stylesheet" href="style.css">
+</head>
+<body class="page-checkout">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="navbar">
+      <a class="logo" href="index.html">Kota<span>Bite</span></a>
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="menu.html">Menu</a>
+        <a class="nav-link" href="order.html">Order</a>
+        <a class="nav-link" href="Take-away.html">Check-Out</a>
+        <a class="nav-link" href="stayin.html">Check-In</a>
+        <a class="nav-link" href="thank-you.html">Quotation</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="center">
+      <span class="kicker">Pay</span>
+      <h2 class="heading">Check-Out</h2>
+    </div>
+
+    <div class="grid" style="margin-top:30px;">
+      <div class="card">
+        <h3 class="card-title">Your Bill</h3>
+        <div id="billDetails">
+          <p class="summary-text">No order placed yet.</p>
+          <p class="summary-text">Complete an order from the menu to generate a bill.</p>
+        </div>
+        <p class="summary-text"><strong>Sub-total:</strong> <span id="subtotalValue">R0.00</span></p>
+        <p class="summary-text"><strong>VAT (15%):</strong> <span id="vatValue">R0.00</span></p>
+        <p class="summary-text"><strong>Delivery:</strong> <span id="deliveryValue">R0.00</span></p>
+        <p class="price" id="billTotal">Total: R0.00</p>
+        <p class="small">Price good for 7 days</p>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">How to Pay</h3>
+        <form id="paymentForm" class="form">
+          <label class="label">Your Name</label>
+          <input id="customerName" class="input" type="text" placeholder="Name" required>
+          <label class="label">Cash or Card</label>
+          <select id="paymentMethod" class="input">
+            <option value="Cash">Cash</option>
+            <option value="Card">Card</option>
+          </select>
+          <p id="paymentMessage" class="notice" style="display:none;"></p>
+          <button class="btn" type="submit">Pay Now</button>
+          <button class="btn alt" type="button" id="clearOrderBtn">Clear Order</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy;2026 Kota BITE .All Rights Reserved.|Durban,KwaZuLu-Natal,South Africa </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

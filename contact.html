@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kota Bite | Contact</title><link rel="stylesheet" href="style.css"></head>
+<!--green colour for contact page-->
+<body class="page-contact">
+<header class="header">
+    <!--navbar class-->
+    <div class="navbar"><a class="logo" href="index.html">Kota<span>Bite</span></a>
+
+        <!--header top bar-->
+<nav class="nav"><a class ="nav-link"
+    href="index.html">Home</a>
+    <a class ="nav-link"href="menu.html">Menu</a>
+    <a class="nav-link"href="order.html">Order</a>
+    <a class="nav-link"href="Order-in.html">Check-In</a>
+    <a class="nav-link"href="Take-away.html">Check-Out</a>
+
+    <a class="nav-link"href="quotation.html">Quotation</a>
+    <a class="nav-link active" href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+
+<!-------MAIN SECTION---------->
+
+<main class="section"><div class="center"><span class="kicker">We'd Love to Hear From You</span><h2>Contact Kota Bite</h2><p>Questions, feedback or franchise enquiries? Send us a message.</p></div>
+<!---CONTACT CARDS------->
+    <div class="contact-grid" style="margin-top:30px">
+        <!--CARD1 ADDRESS------->
+<div class="card"><h3> Visit us at:</h3><p>kwaMnyandu Shopping Centre ,341 Griffiths Mxenge , Umlazi D,Umlazi,4031,KwaZulu-Natal<br>South Africa</p></div>
+<!--CARD2 --PHONE-->
+<div class="card"><h3> Call us at :</h3><p>031 620 3700</p>
+    <h3 WhatsApp us to Order>
+    <p>073 368 9054</p></div>
+
+<!--------CARD3---------->
+
+<div class="card"><h3>Email</h3><p>hello@kotabite.co.za</p></div>
+</div>
+
+
+<!---FORM  send message--->
+
+
+    <div class="card"style="max-width:760px;margin:35px auto;">
+
+        <h3 class="card-title">Send Message</h3>
+        <form class="form"style="max-width:760px;margin:35px auto;">
+
+        
+<!---label class-->
+<label class="label"for="name">Name </label><input id="name"type="text"placeholder required>
+<label class="label"for="email">Email </label><input id="email" type="email" placeholder required>
+<label class="label"for="message">Message </label><textarea class ="textarea"id="message" placeholder="write here..."></textarea>
+
+<!----button class-->
+<button class="btn" type="submit" onclick="event.preventDefault();alert('Thank you for contacting Kota Bite!see you soon')">Submit</button>
+<button class="btn alt" type="reset">Cancel</button>
+
+</form>
+    </div>
+    <!----Map---which will show where the shop is-->
+    <div class="map-section">
+        <h3 class="heading center">Find us</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.263123058451!2d30.90151277555097!3d-29.971867274960196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7acb6535fce01%3A0x826acdba209aede2!2sKwaMnyandu%20Shopping%20Centre!5e0!3m2!1sen!2sza!4v1793016228754!5m2!1sen!2sza"
+         width="600" 
+         height="450" 
+         style="border:0;" 
+         allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+    </div>
+    </main>
+
+<!---FOOTER-->
+<footer>
+    <p>&copy;2026 Kota BITE .All Rights Reserved.|Durban,KwaZuLu-Natal,South Africa </p>
+</footer>
+</body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Kota bites management.">
+    <title>Kota Bites- Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kota Bites</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="form-container">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm" onsubmit="sendEmail(event)">
+            <label for="cName">Your Name:</label>
+            <input type="text" id="cName" required>
+
+            <label for="cPhone">Phone Number:</label>
+            <input type="tel" id="cPhone" placeholder="0821234567" required>
+
+            <label for="cMessage">Message:</label>
+            <textarea id="cMessage" rows="4" required></textarea>
+
+            <button type="submit">Send Email</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kota bites.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
